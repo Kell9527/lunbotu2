@@ -1,37 +1,154 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <link rel="stylesheet" href="lunbo.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+        $("#slider1").responsiveSlides({
+            auto: true,
+//            pager: true,
+            nav: true,
+//            random: true,
+            speed: 500,
+            timeout: 2000,          // Integer: 图片之间切换的时间，单位毫秒
+            maxwidth: 4000,
+            namespace: "centered-btns"
+//            prevText: "Previous",   // String: 往前翻按钮的显示文本
+//            nextText: "Next"       // String: 往后翻按钮的显示文本
 
-You can use the [editor on GitHub](https://github.com/Kell9527/lunbotu2/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+        });
+            $("#slider2").responsiveSlides({
+                auto: true,
+                pager: true,
+//                nav: true,
+                speed: 500,
+                maxwidth: 800,
+                namespace: "transparent-btns"
+            });
+            $("#slider3").responsiveSlides({
+                auto: true,
+//            pager: true,
+                nav: true,
+//            random: true,
+                speed: 500,
+                timeout: 2000,          // Integer: 图片之间切换的时间，单位毫秒
+                maxwidth: 1000,
+                namespace: "centered-btns666"
+//            prevText: "Previous",   // String: 往前翻按钮的显示文本
+//            nextText: "Next"       // String: 往后翻按钮的显示文本
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            });
+        });
 
-### Markdown
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-middle">
+        <div class="pingan"><img src="images/pingan.jpg" width="100%" ></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <ul class="header-ul">
+            <li class="header-li"><a href="#">首页</a></li>
+            <li class="header-li"><a href="#">关于利顺</a></li>
+            <li class="header-li"><a href="#">业务介绍</a></li>
+            <li class="header-li"><a href="#">市场报告</a></li>
+            <li class="header-li"><a href="#">法律法规</a></li>
+            <li class="header-li"><a href="#">人才招聘</a></li>
+            <li class="header-li"><a href="#">联系我们</a></li>
+            <li class="header-li"><span><a href="#">登录/注册</a></span></li>
+        </ul>
+        <div class="header-liebiao"> <img src="images/liebiao.png" ></div>
+        <div class="clear"></div>
+    </div>
 
-```markdown
-Syntax highlighted code block
+</header>
+<section class="lizu">
+    <ul class="rslides" id="slider1">
+        <li><img src="images/lizu.jpg" alt=""></li>
+        <li><img src="images/2.png" alt=""></li>
+        <li><img src="images/3.png" alt=""></li>
+    </ul>
+</section>
+<section class="lizu2">
+    <ul class="rslides" id="slider3">
+        <li><img src="images/lizu2.jpg" width="100%"></li>
+        <li><img src="images/4.jpg" alt=""></li>
+        <li><img src="images/5.jpg" alt=""></li>
+    </ul>
 
-# Header 1
-## Header 2
-### Header 3
+</section>
+<footer class="main">
+    <div class="main-1 mauto">
+        <nav class="main-1-1"><div class="huobi"><img src="images/huobi.png"></div><p>货币市场</p></nav>
+        <nav class="main-1-2"><div class="shouyi"><img src="images/shouyi.png"></div><p>固定收益市场</p></nav>
+        <nav class="main-1-3"><div class="lilv"><img src="images/lilv.png" ></div><p>利率衍生品市场</p></nav>
+        <nav class="main-1-4"><div class="waihui-1"><img src="images/waihui-1.png" ></div><p>外汇掉期市场</p></nav>
+        <nav class="main-1-5"><div class="waihui-2"><img src="images/waihui-2.png" ></div><p>外汇期权市场</p></nav>
+    </div>
+    <div class="main-2 mauto ">
+        <div class="main-2-1">
+            <span class="xinwen">行业新闻</span>
+            <span class="dongtai">金融动态</span>
+            <div></div>
+            <ul class="main-2-1-ul">
+                <li><a href="#">银监会允许利用信贷衍生品对冲风险资产</a> <span>2011/5/26</span></li>
+                <li><a href="#">稳定推动国内人民币对外汇期权市场发展</a> <span>2011/5/26</span></li>
+                <li><a href="#">银监会允许利用信贷衍生品对冲风险资产</a> <span>2011/5/26</span></li>
+            </ul>
+        </div>
+        <div class="main-2-2">
+            <div class="main-2-2-img">
+                <!--<img src="images/gongsixinwen.jpg" width="100%">-->
+                <ul class="rslides" id="slider2">
+                    <li><img src="images/gongsixinwen.jpg" alt=""></li>
+                    <li><img src="images/hong.png" alt=""></li>
+                    <li><img src="images/lv.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="main-2-2-new">
+                <h4>公司新闻</h4>
+                <p><a href="#">平安利顺成功举办了“销售团
+                    队综合技能提升...</a></p>
+                <span class="main-2-2-new-xitong">系统性地讲解了如统提升销售技巧</span>
+                <span class="main-2-2-new-line"></span>
+                <span class="main-2-2-new-time">2011/5/26</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main-3 mauto">
+        <div class="main-3-1">
+            <h3>--公司介绍</h3>
+            <p>平安利顺国际货币经纪有限责任公司是中国第三家、华南地区首家获得银监会批准成立的货
+                币经纪公司。公司由中国平安保险（集团）旗下平安信托投资有限责任公司和瑞士利顺金融
+                集团共同发起组建，注册资本5000万元人民币，总部设在深圳。</p>
+            <a href="#">了解更多</a>
+        </div>
+        <div class="main-3-2"><img src="images/main-3-2.jpg" width="100%"></div>
+    </div>
+    <div class="main-4 mauto">
+        <div class="main-4-1">
+        <ul class="main-4-1-ul">
+            <li>免责声明</li>
+            <li>友情链接</li>
+            <li>网站地图</li>
+        </ul>
+            <span>版权所有© 平安利顺国际货币经纪有限责任公司  粤ICP备14070021号</span>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kell9527/lunbotu2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        <ul class="yuyan">
+            <li class="yingwen">英文 <span class="sanjiaoxing"></span></li>
+            <li class="zhongwen">中文 <span class="sanjiaoxing2"></span></li>
+        </ul>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
